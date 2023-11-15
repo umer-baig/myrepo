@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #ff6f58;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-button {
+    background-color: #ff6f58;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50px;
+    font-size: 22px;
+}
+
+h2 { 
+    color: #ff6f58;
+}
+
+.bell-icon {
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 50px;
+    position: relative;
+}
+
+.bell-icon::after {
+    content: ''; 
+    display: block; 
+    width: 15px; 
+    height: 15px;
+    background-color: #00FF00; 
+    border-radius: 50%; 
+    position: absolute; 
+    top: -2px; 
+    right: -3px; 
+    border:2px solid #ff6f58;
+}
+
+.body-section {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 850px;
+    margin-top: 30px;
+}
+
+.field-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 48%; 
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #ff6f58;
+}
+
+.form-group label {
+    text-align: left;
+    display: block;
+    color: #ff6f58;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    margin-top: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ff6f58;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover { 
+    background-color: #917202;
+}
+
+.file-icon {
+  cursor: pointer;
+  background-color: #c9c4c4;
+  padding: 10px;
+  font-size: 22px;
+  margin-top: 10px;
+}
+.file-icon i {
+  color: black;
+}
+.icon-container {
+   width: 40px;
+    
+} 
+textarea {
+    resize: none;
+    width: 100%; 
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 60px;
+}
+
+.textarea-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.textarea-group {
+     margin-bottom: 20px;
+}
+.textarea-group label {
+     color:#ff6f58;
+     }
+.button-container {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
