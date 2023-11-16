@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Fonts/css/all.css">
+    <link rel="stylesheet" href="submisssion.css">
+    <title>Sub Form</title>
+</head>
+<body>
+    <div class="header">
+        <button class="back-button"><i class="fa-solid fa-arrow-left"></i>Back</button>
+        <h1>Create Campaign</h1>
+        <div class="notif">
+            <div class="bell-icon"><i class="fas fa-bell"></i></div>
+        </div>
+    </div>
+ 
+    <div class="body-section">
+        <h2>GENERAL INFORMATION</h2>
+        <div class="field-container">
+            <div class="form-group">
+                <label for="campaignName">Campaign Name</label>
+                <input type="text" id="campaignName" name="campaignName" placeholder="Campaign Name Here">
+            </div>
+            <div class="form-group">
+                <label for="campaignPicture">Add Campaign Picture</label>
+                <div class="icon-container"> 
+                    <label class="file-icon" for="campaignPicture"><i class="fa-solid fa-plus"></i></label>
+                </div>
+                <input type="file" id="campaignPicture" name="campaignPicture" style="display:none;">
+            </div>
+            <div class="form-group">
+                <label for="brandName">Brand Name</label>
+                <input type="text" id="brandName" name="brandName" placeholder="Brand Name Here">
+            </div>
+            <div class="form-group">
+                <label for="totalCampaignBudget">Total Campaign Budget</label>
+                <input type="text" id="totalCampaignBudget" name="totalCampaignBudget" placeholder="Campaign Budget">
+            </div>
+
+            <div class="form-group hoverable-dropdown">
+                <label for="campaignObjective">Campaign Objective</label>
+                <div class="select">
+                    <i class="fas fa-chevron-down"></i>
+                    Brand Awareness
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Engagement</a>
+                    <a href="#">Conversion</a>
+                </div>
+                
+            </div>
+
+            <div class="form-group hoverable-dropdown">
+                <label for="campaignDiscovery">Campaign Discovery</label>
+                <div class="select">
+                    <i class="fas fa-chevron-down"></i> 
+                    Campaign Discovery
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Search</a>
+                    <a href="#">Social Media</a>
+                    <a href="#">Referral</a>
+                </div>
+                
+            </div>
+
+            <div class="form-group hoverable-dropdown">
+                <label for="compensationType">Compensation Type</label>
+                <div class="select">
+                    <i class="fas fa-chevron-down"></i> 
+                    Paid + Gifted
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Paid</a>
+                    <a href="#">Gifted</a>
+                </div>
+                
+            </div>
+            <div class="form-group">
+                <label for="giftValue">Gift Value</label>
+                <input type="text" id="giftValue" name="giftValue" placeholder="Enter value of the gift each influencer will receive">
+            </div>
+        </div>
+
+        <div class="textarea-container">
+            <div class="textarea-group">
+                <label for="giftDetails">Gift Details</label>
+                <textarea id="giftDetails" name="giftDetails" rows="4" placeholder="Enter details about the gift each influencer will receive"></textarea>
+            </div>
+
+            <div class="textarea-group">
+                <label for="campaignSummary">Campaign Summary</label>
+                <textarea id="campaignSummary" name="campaignSummary" rows="4" placeholder="Provide Influencers a summary of your campaign"></textarea>
+            </div>
+        </div>
+
+        <div class="subbutton">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
