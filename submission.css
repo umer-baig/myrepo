@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'circular-std-medium';
+    src: url('/CSSFonts/circular-std-medium-500.ttf');
 }
 
 .header {
@@ -12,6 +13,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 .back-button {
@@ -64,7 +69,8 @@ h2 {
     padding: 20px;
     border-radius: 8px;
     width: 850px;
-    margin-top: 30px;
+    margin-top: 150px;
+    box-shadow: -2px 0 0 rgba(0, 0, 0, 0.1), 2px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .field-container {
@@ -113,7 +119,6 @@ h2 {
     background-color: #fff;
     border: 1px solid black;
     z-index: 1;
-    top: 100%;
     left: 0;
     width: 100%;
     box-sizing: border-box;
@@ -135,6 +140,7 @@ h2 {
 .hoverable-dropdown .dropdown-content a:hover {
     color: #ff6f58;
     background-color: #c9c4c4;
+    transition: 0.7s;
     
 }
 
