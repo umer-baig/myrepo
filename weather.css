@@ -11,9 +11,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
-    overflow: hidden;
     background: linear-gradient(to bottom, #007ced, #8e738a);
 }
 
@@ -32,7 +31,7 @@
 
 @keyframes wind {
     0% {
-        background-position: left;
+        background-position:  left;
     }
     100% {
         background-position: right;
@@ -42,12 +41,17 @@
 .cities {
     display: flex;
     justify-content: space-around;
-    width: 500px; 
+    width: 550px; 
     color: #fff;
     box-sizing: border-box;
     position: relative; 
     font-size: 35px;
     margin-bottom: 30px;
+
+}
+
+.cities span {
+    cursor: pointer;
 }
 
 .weather-widget {   
@@ -70,6 +74,7 @@
     color: #fff;
     padding: 20px;
     position: relative;
+    cursor: pointer;
 }
 
 
@@ -83,19 +88,27 @@
      width:100%;
      height: 100%;
      text-align: center;
-     padding: 30px;
+     padding-top: 30px;
      border: 3px solid white;
      box-sizing: border-box;
-     margin: 0;
      background: linear-gradient(to bottom, #007ced, #8e738a);
      color: #fff;
-     font-size: 20px;
+     font-size: 22px;
+     font-family: 'Font Awesome 6 Free';
+     font-weight: bolder;
+     transition:  0.5s;
+     cursor: pointer;
+     
+}
+
+.day-box:hover {
+    width: 850px;
+    color: #ab9faa;
 }
 
 .day-box i {
-
-    font-size: 50px;
     
+    font-size: 50px;
 }
 
 .current-weather i {
@@ -103,12 +116,43 @@
     position: relative;
     display: inline-block; 
     margin-right:150px;
+    
 }
 
-.current-weather i::after {
-    content: "19°\A CLOUD";
+
+div.temperature {
+
+    width: 230px;
+    margin: auto;
+    position: relative;
+    margin-top: 35px;
+
+}
+
+ div.temperature::before {
+    content: " TODAY";
+    font-size: 14px; 
+    position: absolute;
+    left: 30%; 
+    top: -30px; 
+    font-weight: 900;
+    font-size: 30px;
+    width: 120px;
+    text-align: center;
+    font-family: 'Font Awesome 6 Free';
+
+
+} 
+div.temperature::after{
+    content: "19° CLOUD";
     font-size: 24px; 
     position: absolute;
-    left: 120px; 
-    top: 20px; 
-}
+    left: 105px; 
+    top: 19px; 
+    font-weight: 900; 
+    width: 120px;
+    text-align: center;
+    font-family: 'Font Awesome 6 Free';
+
+
+} 
