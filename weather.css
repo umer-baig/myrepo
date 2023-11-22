@@ -84,7 +84,7 @@
     height: 170px;
 }
 
-.day-box {
+.day-box1, .day-box2, .day-box3, .day-box4 {
      width:100%;
      height: 100%;
      text-align: center;
@@ -101,12 +101,16 @@
      
 }
 
-.day-box:hover {
+.forecast .day-box1:hover,
+.day-box2:hover,
+.day-box3:hover,
+.day-box4:hover
+ {
     width: 850px;
-    color: #ab9faa;
+    
 }
 
-.day-box i {
+.forecast i {
     
     font-size: 50px;
 }
@@ -156,3 +160,44 @@ div.temperature::after{
 
 
 } 
+.current-weather:hover .cloud-icon {
+
+    animation: fly 1.5s infinite;
+}
+
+@keyframes fly {
+
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+
+        transform: translateY(0);
+    }
+
+}
+
+.day-box1:hover .cloud-icon,
+.day-box2:hover .cloud-icon,
+.day-box3:hover .cloud-icon,
+.day-box4:hover .cloud-icon {
+    
+    animation: float 1.5s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+
+    transform: translateY(0);
+  }
+}
