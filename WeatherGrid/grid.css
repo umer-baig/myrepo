@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "circular-std-medium";
+    src: url(CSSFonts/circular-std-medium-500.ttf)
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #007ced, #8e738a);
+}
+
+.clouds1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(Clouds/clouds1000.png),
+                url(Clouds/clouds1200_1.png), 
+                url(Clouds/clouds1000_blur3.png);
+    animation: wind 50s linear infinite;
+}
+
+@keyframes wind {
+    0% {
+        background-position:  left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.cities {
+    display: flex;
+    justify-content: space-around;
+    width: 500px; 
+    color: #fff;
+    box-sizing: border-box;
+    position: relative; 
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.cities span {
+    cursor: pointer;
+}
+
+.weather-widget {
+  width: 700px;
+ background: linear-gradient(to bottom, #007ced, #8e738a);
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ margin-top: 20px;
+ position: relative;
+ border: 3px solid white;
+ border-radius: 5px;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr); 
+ grid-template-rows: 200px 170px; 
+}
+
+.current-weather {
+background: linear-gradient(to bottom, #007ced, #8e738a);
+text-align: center;
+border: 2px solid white;
+font-size: 24px;
+color: #fff;
+padding: 20px;
+position: relative;
+cursor: pointer;
+grid-column-start: 1;
+grid-column-end: 5;
+box-sizing: border-box;
+}
+
+.day-box1,
+.day-box2,
+.day-box3,
+.day-box4 {
+text-align: center;
+padding: 30px;
+border: 3px solid white;
+box-sizing: border-box;
+background: linear-gradient(to bottom, #007ced, #8e738a);
+color: #fff;
+font-size: 22px;
+font-family: 'Font Awesome 6 Free';
+font-weight: bolder;
+cursor: pointer;
+}
+.current-weather i {
+    font-size: 80px; 
+    position: relative;
+    display: inline-block; 
+    margin-right: 150px;
+}
+
+div.temperature {
+    width: 230px;
+    margin: auto;
+    position: relative;
+    margin-top: 35px;
+}
+
+div.temperature::before {
+    content: " TODAY";
+    font-size: 14px; 
+    position: absolute;
+    left: 30%; 
+    top: -30px; 
+    font-weight: bold;
+    font-size: 30px;
+    width: 120px;
+    text-align: center;
+    font-family: 'Font Awesome 6 Free';
+} 
+
+div.temperature::after {
+    content: "19° CLOUD";
+    font-size: 24px; 
+    position: absolute;
+    left: 105px; 
+    top: 19px; 
+    font-weight: bold; 
+    width: 120px;
+    text-align: center;
+    font-family: 'Font Awesome 6 Free';
+}
+
+.current-weather:hover .cloud-icon {
+    animation: fly 1.5s infinite; 
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+} 
+ 
+    .day-box1:hover .cloud-icon,
+    .day-box2:hover .cloud-icon,
+    .day-box3:hover .cloud-icon,
+    .day-box4:hover .cloud-icon {
+        transform: translateX(-7px);
+} 
+    .day-box1 i,
+    .day-box2 i,
+    .day-box3 i,
+    .day-box4 i {
+        font-size: 50px;
+        transition: transform 0.5s ease;
+}
