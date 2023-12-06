@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+   font-family: Arial, sans-serif; 
+   margin: 0;
+   padding: 0;
+ }
+ .flex-container{
+     display: flex;
+     justify-content:center;
+     align-items: center;
+     height: 100vh;
+     flex-direction: column;
+ }
+ .project {
+     display: flex;
+   align-items: center;
+   margin-bottom: 5px;
+   box-shadow: 0 0 1px #2d2d2d;
+ }
+ 
+ .task {
+   width: 40px;
+   height:40px;
+   border: 4px solid #E4E4E7;
+   background: #E4E4E7;
+   border-radius: 50%;
+   position: relative;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .progress {
+   width: 130px;
+   height: 6px; 
+   background: #E4E4E7;
+   position: relative;
+   z-index: 1;
+ }
+ 
+ .progress-bar {
+   height: 100%;
+   position: absolute;
+   left: -4px;
+   top: 0; 
+   z-index: 2;
+ }
+ 
+ .running .progress-bar {
+   background-color: #1C84C6;
+   width: 100px; 
+ }
+ 
+ .passed .progress-bar {
+   background-color: #1AB394;
+   width: 140px; 
+ }
+ 
+ .failed .progress-bar {
+   background-color: #ED5565;
+   width: 140px;
+ }
+ 
+ .pending.task {
+   background: #F8AC59; 
+ }
+ 
+ .running.task {
+   background: #1C84C6;
+ }
+ 
+ .passed.task {
+   background: #1AB394;
+ }
+ 
+ .failed.task {
+   background: #ED5565;
+ }
+ 
+ .status-pending {
+    width: 130px;
+   color:#F8AC59 ;
+   padding-left: 30px;
+   font-size: 18px;
+ }
+ .status-running {
+    width: 130px;
+    color:#1C84C6;
+    padding-left: 30px;
+    font-size: 18px;
+  }
+  .status-passed {
+    width: 130px;
+    color:#1AB394 ;
+    padding-left:30px ;
+    font-size: 18px;
+  }
+  .status-failed{
+    width: 130px;
+    color:#ED5565 ;
+    padding-left: 30px;
+    font-size: 18px;
+  }
+  .header {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 74px;
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 10px;
+   text-align: center;
+   
+  
+ }
+ .task i {
+   color: white;
+   font-size: 20px;
+   position: relative;
+ }
+ 
+ .label {
+   grid-column: span 1;
+ }
+ .pending i {
+   font-size: 16px;
+   position: relative;
+ }
+ .fa-ellipsis::after {
+   content: "";
+   display: block;
+   width: 20px;
+   height: 20px;
+   border: 2px solid white;
+   border-radius: 50%;
+   position: absolute;
+   top: -3px;
+   right: -5px;
+ }
