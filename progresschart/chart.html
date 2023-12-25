@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="chart.css">
 </head>
 <body>
-  <div class="flex-container">
+  <div class="chart-container">
+  <div class="chart">
     <div class="header">
       <div class="label">Task1</div>
       <div class="label">Task2</div>
@@ -16,7 +17,7 @@
       <div class="label">Status</div>
     </div>
  <div class="project">
-  <div class="task pending"><i class="fa-solid fa-ellipsis"></i></div>
+  <div class="task pending"><div class="pending-icon"> <i class="fa-solid fa-ellipsis"></i></div></div>
   <div class="progress">
     <div class="progress-bar"></div>
   </div>
@@ -25,7 +26,7 @@
     <div class="progress-bar"></div>
   </div>
   <div class="task"></div>
-  <div class="status-pending"><i class="fa-solid fa-ellipsis"></i> Pending</div>
+  <div class="status-pending"><div class="pending-icon2"><i class="fa-solid fa-ellipsis"></i></div> Pending</div>
 </div>
 
 
@@ -93,6 +94,7 @@
   </div>
   <div class="task"></div>
   <div class="status-failed"><i class="fa-regular fa-circle-xmark"></i> Failed</div>
+</div>
 </div>
 </div>
 </div>

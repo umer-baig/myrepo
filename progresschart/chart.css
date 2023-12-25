@@ -4,18 +4,23 @@
    margin: 0;
    padding: 0;
  }
- .flex-container{
-     display: flex;
-     justify-content:center;
-     align-items: center;
-     height: 100vh;
-     flex-direction: column;
+ .chart-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ }
+ .chart{
+     width: 514px;
+     margin: auto;
+     
  }
  .project {
      display: flex;
    align-items: center;
    margin-bottom: 5px;
    box-shadow: 0 0 1px #2d2d2d;
+   width: 600px;
  }
  
  .task {
@@ -79,37 +84,37 @@
  }
  
  .status-pending {
-    width: 130px;
+  width: 200px;
    color:#F8AC59 ;
-   padding-left: 30px;
+   padding-left: 90px;
    font-size: 18px;
  }
  .status-running {
-    width: 130px;
+    width: 200px;
     color:#1C84C6;
-    padding-left: 30px;
+    padding-left: 90px;
     font-size: 18px;
   }
   .status-passed {
-    width: 130px;
+    width: 180px;
     color:#1AB394 ;
-    padding-left:30px ;
+    padding-left:90px ;
     font-size: 18px;
   }
   .status-failed{
-    width: 130px;
+    width: 180px;
     color:#ED5565 ;
-    padding-left: 30px;
+    padding-left: 90px;
     font-size: 18px;
   }
   .header {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   gap: 74px;
+   display: flex;
+   gap: 95px;
    font-size: 24px;
    font-weight: bold;
    margin-bottom: 10px;
    text-align: center;
+   width: 600px;
    
   
  }
@@ -119,21 +124,59 @@
    position: relative;
  }
  
- .label {
-   grid-column: span 1;
- }
  .pending i {
    font-size: 16px;
    position: relative;
  }
- .fa-ellipsis::after {
-   content: "";
-   display: block;
-   width: 20px;
-   height: 20px;
-   border: 2px solid white;
-   border-radius: 50%;
-   position: absolute;
-   top: -3px;
-   right: -5px;
+ .pending-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+
  }
+ .pending-icon2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #F8AC59;
+  display: inline-block;
+  position: relative;
+ }
+ @media  (max-width: 768px) {
+  .chart-container {
+    height: 100vh;
+  }
+
+  .chart {
+    
+    max-width: 600px; 
+    margin: 0 auto; 
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .label {
+    font-size: 18px; 
+    margin-bottom: 5px; 
+  }
+
+  .task {
+    width: 35px; 
+    height: 35px; 
+  }
+
+  .status-pending,
+  .status-running,
+  .status-passed,
+  .status-failed {
+    font-size: 14px; 
+    width: 120px;
+    text-align: center;
+    padding: 5px 0; 
+  }
+
+}
+
