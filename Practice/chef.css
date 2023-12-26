@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;  
+    font-family: "Playfair Display", serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header h1{
+    font-size: 70px;
+    cursor: pointer;
+    color: #444;    
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav li a:hover {
+    color: #666;
+}
+
+.hero {
+    text-align: center;
+    height: 800px;
+    padding: 50px 0;
+    transition: background-color 0.5s ease;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("/png/shutterstock_639667498.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero:hover {
+    background-color: rgba(255,255,255,0.8);
+}   
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero a {
+    background-color: #2ca8ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.hero a:hover {
+    background-color: #33bfff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+}   
+
+.courses {
+    padding: 30px 0;
+}
+
+.courses h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    height: 570px;
+    margin: 0 10px 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.6s ease, background-color 0.6s ease;
+}
+.card:hover {
+    transform: scale(1.05); 
+    background-color: #333;
+    color: #fff;
+    
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.chefs {
+    padding: 30px 0;
+    background-color: #f0f0f0;
+    
+}
+
+.chefs h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.chef-portraits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.chef-portraits img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+.chef-portraits img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+    padding: 30px 0;
+}
+
+.gallery h2 {
+    text-align: center;         
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-grid img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-color: #2ca8ff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+    
+footer li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+header h1, nav li a {
+    transition: color 0.3s ease;
+}
+header h1:hover, nav li a:hover {
+    color: #777;
+} 
+.card-button {
+    display: none;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #2ca8ff;
+    color: #fff;
+    border-radius: 50%; 
+    text-decoration: none;
+    font-size: 16px; 
+    width: 40px; 
+    height: 40px; 
+    line-height: 25px;
+    text-align: center; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #33bfff;
+    transform: translateY(-3px);
+    color: #666;
+}
+.card:hover .card-button {
+    display: inline-block; 
+}
+.chef {
+    text-align: center; 
+    margin: 10px;
+}
+
+.chef img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chef-name {
+    font-size: 18px; 
+    margin-top: 8px; 
+    color: #333; 
+    font-weight: bold; 
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chef-portraits img,
+    .image-grid img {
+        width: 400px;
+        height: 400px;
+    }
+
+    header img {
+        width: 120px;
+    }
+   header li {
+        font-size: 20px;
+
+   }
+
+   header h1 {
+    font-size: 40px;
+   }
+
+   .hero h1{
+    font-size: 40px;
+   }
+
+}
